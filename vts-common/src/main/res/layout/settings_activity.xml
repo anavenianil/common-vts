@@ -1,0 +1,753 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/header_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="70dp"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_config"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/s5dp"
+                app:cardCornerRadius="@dimen/s10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/s10dp"
+                        android:text="Config Vehicle"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/s22sp" />
+
+            </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/s5dp"
+                        app:cardCornerRadius="@dimen/s10dp">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+
+                            <TextView
+                                android:id="@+id/txt_twoD_or_ThreeD"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center"
+                                android:gravity="center|left"
+                                android:padding="@dimen/s15dp"
+                                android:text="Enable 2D 3D"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/s22sp" />
+
+                            <Switch
+                                android:id="@+id/switch000"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="@dimen/s20dp"
+                                android:theme="@style/SwitchTheme" />
+
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/s5dp"
+                        app:cardCornerRadius="@dimen/s10dp">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+
+                            <TextView
+                                android:id="@+id/txt_map_styles"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center"
+                                android:layout_toLeftOf="@+id/switch00"
+                                android:gravity="center|left"
+                                android:padding="@dimen/s15dp"
+                                android:text="Map Styles"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/s22sp" />
+
+                            <Switch
+                                android:id="@+id/switch00"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="@dimen/s20dp"
+                                android:theme="@style/SwitchTheme" />
+
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/s5dp"
+                app:cardCornerRadius="@dimen/s10dp">
+
+                <LinearLayout
+                    android:id="@+id/lv_zoom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/s5dp"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/s10dp"
+                        android:text="Zoom Controls"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/s22sp" />
+
+                    <Switch
+                        android:id="@+id/s_zoom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/s15dp"
+                        android:layout_weight="1"
+
+                        android:theme="@style/SwitchTheme" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/s5dp"
+                app:cardCornerRadius="@dimen/s10dp">
+
+                <LinearLayout
+                    android:id="@+id/lv_navigation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/s5dp"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/s10dp"
+                        android:text="Navigation Control"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/s22sp" />
+
+                    <Switch
+                        android:id="@+id/s_navigation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/s15dp"
+                        android:layout_weight="1"
+
+                        android:theme="@style/SwitchTheme" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/finger_print_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/s5dp"
+                app:cardCornerRadius="@dimen/s10dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:layout_toLeftOf="@+id/switch_finger"
+                        android:gravity="center|left"
+                        android:padding="@dimen/s15dp"
+                        android:text="Enable Finger Print Lock"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/s22sp" />
+
+                    <Switch
+                        android:id="@+id/switch_finger"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/s20dp"
+                        android:theme="@style/SwitchTheme" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/pattern_lock_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/s5dp"
+                app:cardCornerRadius="@dimen/s10dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:layout_toLeftOf="@+id/switch_pattern"
+                        android:gravity="center|left"
+                        android:padding="@dimen/s15dp"
+                        android:text="Enable Pattern Lock"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/s22sp" />
+
+                    <Switch
+                        android:id="@+id/switch_pattern"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/s20dp"
+                        android:theme="@style/SwitchTheme" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/s5dp"
+                app:cardCornerRadius="@dimen/s10dp">
+
+                <LinearLayout
+                    android:id="@+id/lv_live"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/s5dp"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/s10dp"
+                        android:text="Live Tracking"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/s22sp" />
+
+                    <Switch
+                        android:id="@+id/s_live"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/s15dp"
+                        android:layout_weight="1"
+
+                        android:theme="@style/SwitchTheme" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/s5dp"
+                app:cardCornerRadius="@dimen/s10dp">
+
+                <LinearLayout
+                    android:id="@+id/lv_trip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/s5dp"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/s10dp"
+                        android:text="Trip List"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/s22sp" />
+
+                    <Switch
+                        android:id="@+id/s_trip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/s15dp"
+                        android:layout_weight="1"
+
+                        android:theme="@style/SwitchTheme" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/s5dp"
+                app:cardCornerRadius="@dimen/s10dp">
+
+                <LinearLayout
+                    android:id="@+id/lv_stride"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/s5dp"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/s10dp"
+                        android:text="Stride List"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/s22sp" />
+
+                    <Switch
+                        android:id="@+id/s_stride"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/s15dp"
+                        android:layout_weight="1"
+
+                        android:theme="@style/SwitchTheme" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/s5dp"
+                app:cardCornerRadius="@dimen/s10dp">
+
+                <LinearLayout
+                    android:id="@+id/lv_geo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/s5dp"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/s10dp"
+                        android:text="Geo Fencing"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/s22sp" />
+
+                    <Switch
+                        android:id="@+id/s_geo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/s15dp"
+                        android:layout_weight="1"
+
+                        android:theme="@style/SwitchTheme" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/s5dp"
+                app:cardCornerRadius="@dimen/s10dp">
+
+                <LinearLayout
+                    android:id="@+id/lv_service"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/s5dp"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/s10dp"
+                        android:text="Services"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/s22sp" />
+
+                    <Switch
+                        android:id="@+id/s_service"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/s15dp"
+                        android:layout_weight="1"
+
+                        android:theme="@style/SwitchTheme" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/s5dp"
+                app:cardCornerRadius="@dimen/s10dp">
+
+                <LinearLayout
+                    android:id="@+id/lv_documents"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/s5dp"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/s10dp"
+                        android:text="Documents"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/s22sp" />
+
+                    <Switch
+                        android:id="@+id/s_documents"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/s15dp"
+                        android:layout_weight="1"
+
+                        android:theme="@style/SwitchTheme" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/s5dp"
+                app:cardCornerRadius="@dimen/s10dp">
+
+                <LinearLayout
+                    android:id="@+id/lv_notifications"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/s5dp"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/s10dp"
+                        android:text="Notifications"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/s22sp" />
+
+                    <Switch
+                        android:id="@+id/s_notifications"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/s15dp"
+                        android:layout_weight="1"
+
+                        android:theme="@style/SwitchTheme" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/s5dp"
+                app:cardCornerRadius="@dimen/s10dp">
+
+                <LinearLayout
+                    android:id="@+id/lv_feedback"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/s5dp"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/s10dp"
+                        android:text="Feedback"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/s22sp" />
+
+                    <Switch
+                        android:id="@+id/s_feedback"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/s15dp"
+                        android:layout_weight="1"
+
+                        android:theme="@style/SwitchTheme" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/s5dp"
+                app:cardCornerRadius="@dimen/s10dp">
+
+                <LinearLayout
+                    android:id="@+id/lv_nav_my_car"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/s5dp"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/s10dp"
+                        android:text="Navigate to My Car"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/s22sp" />
+
+                    <Switch
+                        android:id="@+id/s_nav_my_car"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/s15dp"
+                        android:layout_weight="1"
+
+                        android:theme="@style/SwitchTheme" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/s5dp"
+                app:cardCornerRadius="@dimen/s10dp">
+
+                <LinearLayout
+                    android:id="@+id/lv_add_vehicle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/s5dp"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/s10dp"
+                        android:text="Add Vehicle"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/s22sp" />
+
+                    <Switch
+                        android:id="@+id/s_add_vehicle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/s15dp"
+                        android:layout_weight="1"
+
+                        android:theme="@style/SwitchTheme" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/s5dp"
+                app:cardCornerRadius="@dimen/s10dp">
+
+                <LinearLayout
+                    android:id="@+id/lv_update_vehicle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/s5dp"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/s10dp"
+                        android:text="Update Vehicle"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/s22sp" />
+
+                    <Switch
+                        android:id="@+id/s_update_vehicle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/s15dp"
+                        android:layout_weight="1"
+
+                        android:theme="@style/SwitchTheme" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/s5dp"
+                app:cardCornerRadius="@dimen/s10dp">
+
+                <LinearLayout
+                    android:id="@+id/lv_change_vehicle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/s5dp"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/s10dp"
+                        android:text="Change Vehicle"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/s22sp" />
+
+                    <Switch
+                        android:id="@+id/s_change_vehicle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/s15dp"
+                        android:layout_weight="1"
+
+                        android:theme="@style/SwitchTheme" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/text_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/sign_up_gradient"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/update"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        android:textSize="18sp"/>
+
+
+</RelativeLayout>

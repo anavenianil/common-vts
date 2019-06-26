@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/s5dp"
+        android:text="Alert"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/s20sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height=".5dp"
+        android:background="@color/black"
+        android:padding="@dimen/s10dp" />
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/s5dp"
+        android:text="@string/geo_fence_alert_custom_text"
+        android:textColor="@color/black"
+        android:textSize="@dimen/s18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/s10dp"
+        android:padding="@dimen/s5dp"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/submit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/s5dp"
+            android:text="@string/Submit"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/s20sp" />
+
+        <TextView
+            android:id="@+id/next"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/s5dp"
+            android:text="@string/next"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/s20sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

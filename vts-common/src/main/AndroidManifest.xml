@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.affluencesystems.insurancetelematics">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+
+    <application
+        android:name=".common.Utils.MyApplication"
+        android:allowBackup="true"
+        android:fullBackupContent="@xml/backup_descriptor"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+
+
+        <activity
+            android:name=".common.Activitys.Terms_Condition"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".common.Media_picker.ImageActivity"
+            android:theme="@style/Theme.AppCompat.Translucent" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+        <service android:name=".common.Utils.LiveService2" />
+
+       <!-- <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAntSjFWNfDT4VIXOA2Wp324haPJ3_L6JY" />-->
+
+        <service android:name=".common.Utils.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/cancel" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+
+        <activity
+            android:name=".common.Activitys.FeedbackActivity"
+            android:launchMode="singleTask" />
+
+        <activity
+            android:name=".common.Activitys.TripCreationActivity"
+            android:launchMode="singleTask" />
+
+        <activity
+            android:name=".common.Activitys.NotificationsActivity"
+            android:launchMode="singleTask" />
+
+        <activity
+            android:name=".common.Activitys.StridePathActivity"
+            android:launchMode="singleTask" />
+
+        <activity
+            android:name=".common.Activitys.TripListActivity"
+            android:launchMode="singleTask" />
+
+        <activity
+            android:name=".common.Activitys.GeoFencingActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".common.Activitys.StrideActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".common.Activitys.FullScreen_activity"
+            android:launchMode="singleTask" />
+
+        <activity
+            android:name=".common.Activitys.SettingsActivity"
+            android:launchMode="singleTask" />
+
+        <activity
+            android:name=".common.Activitys.ConfigActivity"
+            android:launchMode="singleTask" />
+
+        <receiver
+            android:name=".common.Utils.ConnectivityReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.affluencesystems.admin.conectivity" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,337 @@
+<resources>
+    <string name="app_name">Personal</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="vehicle_economy">Vehicle Economy</string>
+    <string name="vehicle_violation">Vehicle Violations</string>
+    <string name="vehicle_accedents">Vehicle Accidents</string>
+    <string name="skip">Skip</string>
+    <string name="next">Next</string>
+    <string name="login">Sign In</string>
+
+    <string name="onboard_vehivle_traking">Complete Vehicle Tracking</string>
+    <string name="onboard_fuel_economy">Fuel Economy</string>
+    <string name="onboard_theft_protection">Theft Protection</string>
+    <string name="onboard_vehicle_control">Vehicle Complete Monitoring</string>
+    <string name="onboard_vehivle_contion_alerts">Alerts On Vehicle Condition</string>
+    <string name="onboard_geo_fencing">Geo Fencing</string>
+
+    <string name="onboard_vehivle_traking_txt">Track your vehicle current location, Traveled path and Historical travel path simple by date</string>
+    <string name="onboard_fuel_economy_txt">Get Fuel Average,Mileage,Fuel Economy with graphical representation</string>
+    <string name="onboard_theft_protection_txt">Protect your Vehicle from theft and track your lost cars</string>
+    <string name="onboard_vehicle_control_txt">Monitor ever available future in your car from this application</string>
+    <string name="onboard_vehivle_contion_alerts_txt">Get alerts on every major action on your car by message</string>
+    <string name="onboard_geo_fencing_txt">You can fix boundarys for vehilce</string>
+
+    <string name="home">Home</string>
+    <string name="vehicle_tracking">Vehicle Tracking</string>
+    <string name="speed_manegment">Speed</string>
+    <string name="vehicle_management">vehicle Management</string>
+    <string name="graphs">Graphs</string>
+    <string name="title_activity_vehicle__tracking_">Map</string>
+    <string name="logout">Logout</string>
+    <string name="enter_fence_name">Enter Fence Name</string>
+
+    <string name="geo_fence_alert_custom_text">Do you want to set Custom geo fence also? please click for next or submit for create only one geo fence</string>
+    <string name="geo_fence_alert_radius_text">Do you want to set Radius geo fence also? please click for next or submit for create only one geo fence</string>
+    <string name="geo_fence_alert_update_next_text">Do you want to update Next geo fence also? please click for next or submit for update only one geo fence</string>
+    <!--<string name="geo_fence_alert_update_raius_text">Do you want to update Radius geo fence also? please click for next or submit for update only one geo fence</string>-->
+
+    <string name="google_directions_key">AIzaSyCVU1Na08W7fM4HibxEY1ZZn8Pf-OcsgEI</string>
+
+    <!--registration screen-->
+    <string name="reg_heading">Registration</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="timezone">Timezone</string>
+    <string name="mobile_no">Mobile Number</string>
+    <string name="email">Email</string>
+    <string name="user_name">Username</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="register">REGISTER</string>
+    <string name="vehilceId">Vehilce Number</string>
+    <string name="manufacturedCompany">Manufactured Company</string>
+    <string name="brand">Brand</string>
+    <string name="vehicleModel">Vehicle Model</string>
+    <string name="vehicleModelNumber">Vehicle Model Number</string>
+    <string name="fuel">Fuel</string>
+    <string name="country">Country</string>
+    <string name="car_service_date">Car Last Service Date</string>
+    <string name="car_parchase_date">Car Purchase Date</string>
+    <string name="odometer_reading">Odometer Reading</string>
+    <string name="state">State</string>
+    <string name="city">City</string>
+    <string name="deviceId">Device Id</string>
+    <string name="gender">Gender</string>
+    <string name="address">Address</string>
+    <string name="load_address">Loading your Address..</string>
+    <string name="loading">Loading...</string>
+    <string name="check_serial_no">Checking device serial...</string>
+    <string name="I_accept">I accept</string>
+    <string name="Terms_conditions">Terms and Conditions</string>
+    <string name="already_have_an_acccont">Already have an Account \?</string>
+    <string name="config_not_found">Config Not Found...</string>
+    <string name="failed_to_connect_server">Failed to Connect Server...</string>
+    <string name="updating">Updating...</string>
+    <string name="update_success">Updated successfully...</string>
+    <string name="confirm_pass_error">Password Conform password not match...</string>
+    <string name="update_pass_load">Updating Password...</string>
+    <string name="failed_to_update">Failed to update...</string>
+    <string name="enter_valid_number">Enter valid number</string>
+    <string name="give_rating">Please give Rating</string>
+    <string name="please_wait">Please wait...</string>
+    <string name="feedback_sent">Feedback sent successfully</string>
+    <string name="failed">Failed..</string>
+    <string name="image_uri_not_found">Image uri not found...</string>
+    <string name="trip_end_text">Would you like to End Trip here</string>
+    <string name="trip_start_text">Would you like to Start Trip from here</string>
+    <string name="enter_title">Please enter title</string>
+    <string name="trip">Trip</string>
+    <string name="trip_list">Trip List</string>
+    <string name="end_here">End Here</string>
+    <string name="start_here">Start from Here</string>
+    <string name="trip_added">Trip added successfully</string>
+    <string name="enable_gps">Your GPS seems to be disabled, do you want to enable it?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="trip_end_msg">Trip ended successfully</string>
+    <string name="select_start_date">Please select start date</string>
+    <string name="select_service_date">Please select Lase Service date</string>
+    <string name="select_end_date">Please select end date</string>
+    <string name="no_response">No Response</string>
+    <string name="speed_change">speed changed to</string>
+    <string name="zoom_enable">Zoom controls enabled</string>
+    <string name="zoom_disable">Zoom controls disabled</string>
+    <string name="mileage">Mileage:</string>
+    <string name="distance">Distance:</string>
+    <string name="time">Time:</string>
+    <string name="car_location_not_found">Car Location not found</string>
+    <string name="no_data">No data found</string>
+    <string name="fence_loading">Loading Fence...</string>
+    <string name="already_in_fence">Already in Geo fence</string>
+    <string name="select_3points">Please pick minimum 3 points</string>
+    <string name="enter_radius">Enter Radius</string>
+    <string name="something_wrong">Some thing went wrong. please try again</string>
+    <string name="delete_success">Successfully deleted..</string>
+    <string name="km">km</string>
+    <string name="l">L</string>
+    <string name="rs1">Rs</string>
+    <string name="min">min</string>
+
+
+
+
+    <!--registration screen errors-->
+    <string name="first_name_error">Enter First Name</string>
+    <string name="last_name_error">Enter Last Name</string>
+    <string name="mobile_no_error_reg">Enter Mobile Number</string>
+    <string name="email_error">Enter Email</string>
+    <string name="username_error">Enter Username</string>
+    <string name="password_error">Enter Password</string>
+    <string name="confirm_password_error">Enter Confirm Password</string>
+    <string name="mobile_number_min_length_error">Min Length 10 Digits</string>
+    <string name="admin_valid_email_error">Enter Valid Email</string>
+    <string name="admin_valid_mobile_error">Enter Valid Mobile Number</string>
+    <string name="title_activity_test">Map</string>
+
+
+    <string name="retype_password">Retype Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="user">User</string>
+
+    <!--error messages-->
+    <string name="user_name_error">please enter user name</string>
+    <string name="user_pass_error">please enter password</string>
+    <string name="retype_password_error">please retype password</string>
+    <string name="password_not_match">Confirm password not match with password</string>
+    <string name="mobile_error">please enter 10 digits</string>
+    <string name="email_address_error">Please Enter email</string>
+    <string name="enter_new_pass">Enter new Password</string>
+    <string name="conform_pass">Conform Password</string>
+    <string name="gender_error">please enter gender</string>
+    <string name="address_error">please enter address</string>
+    <string name="Otp_title"> We Have sent you an access code via SMS for Mobile number verifications </string>
+    <string name="vertification_code">Enter Verification code </string>
+    <string name="title_activity_travel_path">Travel Path</string>
+    <string name="device_Id_error">Enter device Id </string>
+    <string name="device_Id_not_exist">Device Id not exist </string>
+
+
+    <!--sign up two errors-->
+
+    <string name="vehicle_id_error">please enter vehicle Id </string>
+    <string name="manufactured_company_error">please enter manufactured company</string>
+    <string name="brand_error">please enter brand</string>
+    <string name="vehicle_model_error">please enter vehicle model</string>
+    <string name="vehicle_model_number_error">please enter vehicle model number</string>
+    <string name="country_error">please enter country</string>
+    <string name="state_error">please enter state</string>
+    <string name="city_error">please select city</string>
+
+
+    <!--about on board-->
+    <string name="ob_header1">Anti-Theft Security System</string>
+    <string name="ob_header2">Vehicle Monitoring</string>
+    <string name="ob_header3">Fuel Economy Monitoring</string>
+    <string name="ob_header4">Message Alerts on Vehicle Condition</string>
+    <string name="ob_header5">Geo-Fencing</string>
+    <string name="ob_header6">Vehicle Historical Travelled Path</string>
+
+    <string name="ob_get_started">GET STARTED</string>
+    <string name="ob_skip">Skip</string>
+    <string name="ob_next">Next</string>
+
+    <string name="ob_desc1">This System will protect your vehicle from the thiefs and app is very useful for the theft vehicle tracking with map</string>
+    <string name="ob_desc2">This System will protect your vehicle from the thiefs and app is very useful for the theft vehicle tracking with map</string>
+    <string name="ob_desc3">This System will protect your vehicle from the thiefs and app is very useful for the theft vehicle tracking with map</string>
+    <string name="ob_desc4">This System will protect your vehicle from the thiefs and app is very useful for the theft vehicle tracking with map</string>
+    <string name="ob_desc5">This System will protect your vehicle from the thiefs and app is very useful for the theft vehicle tracking with map</string>
+    <string name="ob_desc6">This Device is </string>
+
+
+    <string name="media_picker_select_from">Select From:</string>
+    <string name="media_picker_camera">Camera</string>
+    <string name="media_picker_gallery">Gallery</string>
+    <string name="media_picker_ok">OK</string>
+    <string name="media_picker_cancel">Cancel</string>
+    <string name="media_picker_some_permission_is_denied">Some Permission is Denied</string>
+    <string name="media_picker_you_need_to_grant_access_to">You need to grant access to</string>
+    <string name="media_picker_read_Write_external_storage"><![CDATA[Read & Write External Storage]]></string>
+
+    <string name="pick_date">&lt;6,September,2018&gt;</string>
+    <string name="rs">\u20B9 7</string>
+
+    <string-array name="gender_array">
+        <item>please select gender</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="fuel_arry">
+        <item>select fuel type </item>
+        <item>Diesel</item>
+        <item>Petrol </item>
+    </string-array>
+
+    <string name="tire_pressure">TYRE PRESSURE</string>
+    <string name="option_car_location">Take car location as center</string>
+    <string name="option_custome_location">Let me pick center point</string>
+    <string name="dash_board">Dash Board</string>
+    <string name="speed_monitoring">Speed Monitoring</string>
+    <string name="vehicle_monitoring">vehicle Monitoring</string>
+    <string name="fuel_monitoring">Fuel Monitoring</string>
+    <string name="otp">One Time Password</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="update">Update</string>
+    <string name="title_activity_live_tracking">Map</string>
+    <string name="places">Places</string>
+
+    <string-array name="doc_array">
+        <item>RC</item>
+        <item>Pollution</item>
+        <item>Licence</item>
+        <item>Insurance</item>
+    </string-array>
+
+    <string-array name="service_array">
+        <item>Paid</item>
+        <item>Free</item>
+    </string-array>
+
+    <string name="doc_wallet">Document Wallet</string>
+    <string name="service_details">Service Details</string>
+    <string name="date_error">plase select date</string>
+    <string name="odometer_error">plase enter odeometer reading</string>
+    <string name="description_error">plase enter description"</string>
+    <string name="amount_error">plase enter amount"</string>
+    <string name="add_doc">Add Service Document</string>
+    <string name="expire_date_error">please select expire date</string>
+    <string name="doc_success_msg">Documents added successfully</string>
+    <string name="doc_fail_msg">Documents adding fail</string>
+    <string name="feedback">Feedback</string>
+    <string name="settings">Settings</string>
+    <string name="config">Config</string>
+    <string name="live_tracking">Live Tracking</string>
+    <string name="car_health">Car Health</string>
+    <string name="travel_path">Travel Path</string>
+    <string name="my_car">My Car</string>
+    <string name="services">Services</string>
+    <string name="documents">Documents</string>
+
+    <string-array name="feedback">
+        <item>Feedback</item>
+        <item>Bug/Crash/Problem</item>
+    </string-array>
+    <string name="notifications">Notifications</string>
+    <string name="geo_fencing">Geo Fencing</string>
+    <string name="recommended_next_service_in_n">Recommended next service in </string>
+    <string name="your">Your..,</string>
+    <string name="engine_is">Engine is</string>
+    <string name="on">ON</string>
+    <string name="has">, Has</string>
+    <string name="_0">0</string>
+    <string name="errors">Errors</string>
+    <string name="car_condition_is">Car condition is</string>
+    <string name="good">GOOD</string>
+    <string name="_790">790</string>
+    <string name="km_s_or">km/s or</string>
+    <string name="_320">320</string>
+    <string name="days">days</string>
+    <string name="battary_level">Battary level </string>
+    <string name="_12_8_v">12.8 v</string>
+    <string name="temperature_is">Temperature is</string>
+    <string name="_22">22</string>
+    <string name="in_the_vehicle_n">in the vehicle,</string>
+    <string name="_30">30</string>
+    <string name="out_side_vehicle">out side vehicle.</string>
+    <string name="tyre_presure_is">Tyre presure is</string>
+
+    <string name="all_dores_are">All doors are</string>
+    <string name="lights_are">Lights are</string>
+    <string name="off">OFF</string>
+    <string name="seat_belts_are">Seat belts are</string>
+    <string name="lock">LOCKED</string>
+    <string name="travel_details">Travel Details</string>
+    <string name="cost_for_drive">Cost for drive</string>
+    <string name="stride_path">Stride Path</string>
+    <string name="stride_list">Stride List</string>
+
+
+    <string name="msg_over_speed">Your vehicle is crossing the speed limit.</string>
+    <string name="msg_emergency">There has been emergency raised.</string>
+    <string name="msg_damage">Device has been damaged or broken condition.</string>
+    <string name="msg_rash">Driver has been turning the car rash.</string>
+
+    <string name="msg_harsh">Driver has been accelerating the car Harsh.</string>
+    <string name="msg_unsafe">Driver has been driving unsafe.</string>
+    <string name="msg_ignition_on">Engine is on state.</string>
+    <string name="msg_ignition_off">Egine is off state.</string>
+    <string name="msg_battery_low">Low battery,Need to be charged.</string>
+
+    <string name="unlock_success">App is Unlocked successfully.</string>
+    <string name="unlock_failed">Failed to Unlock the app.</string>
+    <string name="device_is_secure">Device is now secure.</string>
+    <string name="security_device_cancelled">Device is not secure or user cancel the request.</string>
+    <string name="authenticate_again">Authenticate Again</string>
+    <string name="forget_edittxt">Enter Password</string>
+    <string name="forget_pass">Forget password</string>
+    <string name="Submit">Submit</string>
+    <string name="edit_pwd">New Password</string>
+    <string name="Confirm">Confirm Password</string>
+    <string name="forgotten">Forget Password</string>
+    <string name="nav_my_car">Navigate to my car</string>
+
+    <string name="title_fingerprint">One-touch Home</string>
+    <string name="desc_fingerprint">Please place your fingertip on the scanner to verify your identity</string>
+    <string name="note">(Fingerprint sign in makes your app login much faster. Your device should have at least one fingerprint registered in device settings)</string>
+    <string name="no_org_found"> No organization found with given name</string>
+    <string name="unlock">Unlock</string>
+    <string name="confirm_pattern">Confirm your screen lock PIN,Pattern or Password</string>
+
+    <string name="setting_label">Please set the screen lock Manually by navigating to : Settings>Security</string>
+
+
+</resources>

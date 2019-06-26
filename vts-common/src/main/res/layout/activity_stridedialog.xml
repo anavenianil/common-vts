@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/orange"
+            android:gravity="center"
+            android:padding="@dimen/s5dp"
+            android:text="Alert"
+            android:textColor="@color/white"
+            android:textSize="@dimen/s24dp" />
+
+
+        <TextView
+            android:id="@+id/Stridestart_Dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/s10dp"
+            android:gravity="center"
+            android:text=" Would you like to start from here"
+            android:textSize="@dimen/s18dp" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="@dimen/s10dp"
+            android:gravity="center"
+            android:text="Please wait loading current address...."
+            android:textSize="@dimen/s18dp" />
+
+        <EditText
+            android:id="@+id/edit_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/address"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:hint="Please Enter Title"
+            android:textSize="@dimen/s15dp"
+            android:visibility="visible" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+           <!-- <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/orange"
+                android:layout_marginLeft="@dimen/s20dp"
+                android:layout_marginTop="@dimen/s5dp"
+                android:layout_marginBottom="@dimen/s5dp"
+                app:cardCornerRadius="@dimen/s5dp">-->
+
+                <TextView
+                    android:id="@+id/yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/s10dp"
+                    android:layout_weight="1"
+                    android:paddingBottom="@dimen/s10dp"
+                    android:paddingRight="@dimen/s20dp"
+                    android:paddingLeft="@dimen/s20dp"
+                    android:text="Yes"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/s22sp" />
+
+            <!--</android.support.v7.widget.CardView>-->
+
+           <!-- <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/orange"
+                android:layout_marginLeft="@dimen/s20dp"
+                android:layout_marginRight="@dimen/s20dp"
+                android:layout_marginTop="@dimen/s5dp"
+                android:layout_marginBottom="@dimen/s5dp"
+                app:cardCornerRadius="@dimen/s5dp">-->
+
+                <TextView
+                    android:id="@+id/no"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/s10dp"
+                    android:paddingBottom="@dimen/s10dp"
+                    android:paddingRight="@dimen/s20dp"
+                    android:paddingLeft="@dimen/s20dp"
+                    android:text="No"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/s22sp" />
+            <!--</android.support.v7.widget.CardView>-->
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

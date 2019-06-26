@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/s5dp"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/s5dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp260"
+        android:elevation="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/document_image"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:scaleType="fitXY"
+
+                android:src="@drawable/gas_stations" />
+
+            <ImageView
+                android:id="@+id/delete_doc"
+                android:layout_width="@dimen/s28sp"
+                android:layout_height="@dimen/s28sp"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:visibility="gone"
+                android:layout_margin="@dimen/s5dp"
+                android:padding="@dimen/s2dp"
+                android:src="@drawable/deleteicon" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp80"
+                android:layout_below="@+id/document_image"
+                android:layout_gravity="bottom"
+                android:background="@color/orenge"
+                android:gravity="left|center">
+
+                <TextView
+                    android:id="@+id/documentType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/s5dp"
+                    android:text="Licence"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/s20dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/s40dp"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center|right"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:padding="@dimen/margin_top_10dp">
+
+                    <TextView
+                        android:id="@+id/expire_on"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Expire on"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/s16sp" />
+
+                    <TextView
+                        android:id="@+id/expire_on_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/s10dp"
+                        android:text="02-02-2018"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/s16sp" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/documentType"
+                    android:layout_marginLeft="@dimen/s5dp"
+                    android:text="description"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/s16sp" />
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

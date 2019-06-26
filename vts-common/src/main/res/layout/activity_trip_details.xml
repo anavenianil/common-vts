@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/header_layout" />
+
+    <LinearLayout
+        android:id="@+id/lv_dates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="@dimen/s10dp"
+        android:layout_marginBottom="@dimen/s10dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/s5dp"
+        android:weightSum="5">
+
+        <TextView
+            android:id="@+id/start_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/s5dp"
+            android:layout_weight="2"
+            android:background="@drawable/login_user_pass_gradient"
+            android:focusable="false"
+            android:gravity="center"
+            android:hint="Start Date"
+            android:padding="@dimen/s10dp"
+            android:textSize="@dimen/s18sp" />
+
+        <TextView
+            android:id="@+id/end_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/s5dp"
+            android:layout_weight="2"
+            android:background="@drawable/login_user_pass_gradient"
+            android:focusable="false"
+            android:gravity="center"
+            android:hint="End Date"
+            android:padding="@dimen/s10dp"
+            android:textSize="@dimen/s18sp" />
+
+
+        <TextView
+            android:id="@+id/tv_ok"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/s5dp"
+            android:layout_weight="1"
+            android:background="@drawable/sign_up_gradient"
+            android:gravity="center"
+            android:padding="@dimen/s10dp"
+            android:text="OK"
+            android:textColor="@color/white"
+            android:textSize="@dimen/s18sp" />
+
+
+    </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeToRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lv_dates">
+
+        <com.affluencesystems.insurancetelematics.common.views.ShimmerRecyclerView
+            android:id="@+id/trip_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:scrollbars="vertical" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <TextView
+        android:id="@+id/no_docs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="No Trips Found"
+        android:textSize="@dimen/s22sp"
+        android:visibility="visible" />
+
+
+    <SearchView
+        android:id="@+id/mSearch_stride_details"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginLeft="@dimen/s30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="@dimen/s30dp"
+        android:layout_marginBottom="@dimen/s5dp"
+        android:background="@drawable/search_text_background"
+        android:textColorHint="@color/black"
+        android:visibility="gone"
+        app:defaultQueryHint="Enter vehicle number" />
+
+</RelativeLayout>

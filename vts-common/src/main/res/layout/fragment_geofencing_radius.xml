@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".common.fragments.GeofencingRadiusFragment">
+
+    <com.google.android.gms.maps.MapView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/s10dp"
+        android:layout_marginBottom="@dimen/s10dp"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right|bottom">
+
+
+        <ImageView
+            android:id="@+id/ok"
+            android:layout_width="@dimen/s50dp"
+            android:layout_height="@dimen/s50dp"
+            android:layout_below="@+id/pin"
+            android:layout_gravity="top"
+            android:layout_marginTop="@dimen/s20dp"
+            android:src="@drawable/correct"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/cancel"
+            android:layout_width="@dimen/s50dp"
+            android:layout_height="@dimen/s50dp"
+            android:layout_below="@+id/ok"
+            android:layout_marginTop="@dimen/s10dp"
+            android:src="@drawable/cancel"
+            android:visibility="gone" />
+
+
+        <ImageView
+            android:id="@+id/add"
+            android:layout_width="@dimen/s50dp"
+            android:layout_height="@dimen/s50dp"
+            android:padding="@dimen/s5dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/s10dp"
+            android:layout_above="@+id/navigation"
+            android:src="@drawable/plus" />
+
+
+        <ImageView
+            android:id="@+id/navigation"
+            android:layout_width="@dimen/s50dp"
+            android:layout_height="@dimen/s50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:src="@drawable/navigation" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/s10dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_gravity="left">
+
+        <ImageView
+            android:id="@+id/delete"
+            android:layout_width="@dimen/s50dp"
+            android:layout_height="@dimen/s50dp"
+            android:layout_marginTop="@dimen/s10dp"
+            android:src="@drawable/delete"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/update"
+            android:layout_width="@dimen/s50dp"
+            android:layout_height="@dimen/s50dp"
+            android:layout_marginTop="@dimen/s15dp"
+            android:src="@drawable/ic_create_black_24dp"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+</FrameLayout>

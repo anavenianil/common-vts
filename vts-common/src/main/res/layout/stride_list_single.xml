@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/s10dp"
+        android:layout_marginLeft="@dimen/s20sp"
+        android:layout_marginTop="@dimen/s5dp"
+        android:layout_marginRight="@dimen/s20sp"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardElevation="@dimen/s5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:orientation="vertical"
+            android:padding="@dimen/s10dp">
+
+            <LinearLayout
+                android:id="@+id/lv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/tv_mileage"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Millage: 20"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/s15dp" />
+
+                <TextView
+                    android:id="@+id/tv_distance"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Distance: 20km"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/s15dp" />
+
+                <TextView
+                    android:id="@+id/tv_time_hour"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Hours: 2h"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/s15dp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/gray"
+                android:layout_marginTop="@dimen/s2dp"
+                android:layout_height="1dp"/>
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/s5dp"
+                android:maxLines="1"
+                android:text="9 am - 11 am"
+                android:textColor="@color/gray_dark"
+                android:textSize="@dimen/s15dp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/s5dp"
+                android:layout_marginTop="@dimen/s2dp"
+                android:layout_marginRight="@dimen/s5dp"
+                android:layout_marginBottom="4dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/from"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="From   :"
+                    android:textSize="@dimen/s18sp" />
+
+                <TextView
+                    android:id="@+id/from_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/s5dp"
+                    android:layout_toRightOf="@id/from"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="8-3-6,8 th strees,NGRI,Habsiguda"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/s16sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/s5dp"
+                android:layout_marginRight="@dimen/s5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/to"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="To        :"
+                    android:textSize="@dimen/s18sp" />
+
+                <TextView
+                    android:id="@+id/to_aadress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/s5dp"
+                    android:layout_toRightOf="@+id/to"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="8-3-6,8 th strees,NGRI,Habsiguda"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/s16sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/header_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/background_img_drawer"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/s30dp"
+            android:layout_marginRight="@dimen/s30dp"
+            android:layout_marginTop="@dimen/s30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/s30sp"
+                android:text="FeedBack  Type"
+                android:textColor="@color/white"
+                android:textSize="@dimen/s18dp" />
+
+            <Spinner
+                android:id="@+id/feedback_type"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginTop="@dimen/s20dp"
+                android:background="@drawable/spinner_backgroud"
+                android:spinnerMode="dropdown" />
+
+            <LinearLayout
+                android:id="@+id/rating_bar_layout"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/s30dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rating"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/s18dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:layout_height="@dimen/s50dp"
+                    android:orientation="horizontal">
+
+                    <RatingBar
+                        android:id="@+id/rating_bar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:numStars="5"
+                        android:progressTint="@color/orenge"
+                        android:src="@drawable/rating"
+                        android:tint="@color/orange" />
+
+                    <TextView
+                        android:id="@+id/txt_rating_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/s10dp"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/orenge"
+                        android:textSize="@dimen/s22sp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/s30dp"
+                android:text="Description"
+                android:textColor="@color/white"
+                android:textSize="@dimen/s18dp" />
+
+            <EditText
+                android:id="@+id/tv_description"
+                android:layout_width="match_parent"
+                android:gravity="start"
+                android:layout_height="@dimen/s100dp"
+                android:layout_marginTop="@dimen/s20dp"
+                android:layout_below="@+id/issue_type"
+                android:padding="@dimen/s5dp"
+                android:textColor="@color/black"
+                android:background="@drawable/feed_back_background"
+                android:maxLines="6"
+                android:hint="Issue description"
+                android:textSize="@dimen/s18dp"  />
+
+            <TextView
+                android:id="@+id/submit"
+                android:layout_width="@dimen/s200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_description"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/s20dp"
+                android:background="@drawable/submit_rounded"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="Submit"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

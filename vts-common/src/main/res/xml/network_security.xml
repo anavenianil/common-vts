@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <!--<domain includeSubdomains="true">192.168.0.164</domain>
+        &lt;!&ndash;<domain includeSubdomains="true">192.168.0.127</domain>&ndash;&gt;
+
+        <domain includeSubdomains="true">&lt;!&ndash;192.168.0.127&ndash;&gt;192.168.0.200</domain>
+        <domain includeSubdomains="true">1.22.125.203</domain>-->
+
+        <domain includeSubdomains="true">intellitrack.in:9191/</domain>
+        <domain includeSubdomains="true">intellitrack.in:9090/</domain>
+        <domain includeSubdomains="true">http://192.168.0.120:1234/</domain>
+
+
+    </domain-config>
+</network-security-config>

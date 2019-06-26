@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:background="@color/white"
+android:orientation="vertical"
+    >
+
+<TextView
+    android:id="@+id/title"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_margin="@dimen/s5dp"
+    android:text="Delete Geo Fence"
+    android:textColor="@color/orange"
+    android:textSize="@dimen/s20sp"
+    android:textStyle="bold" />
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height=".5dp"
+    android:background="@color/black"
+    android:padding="@dimen/s10dp"
+    />
+
+<android.support.v7.widget.RecyclerView
+    android:id="@+id/rv_fences"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/s300dp"/>
+
+</LinearLayout>

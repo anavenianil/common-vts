@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#0000"
+    android:layout_height="wrap_content">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:background="#0000"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/s10dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="@dimen/s10dp"
+            android:background="@color/white">
+
+            <RelativeLayout
+                android:id="@+id/select_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/s60dp"
+                android:background="@color/orange">
+
+
+                <TextView
+                    android:id="@+id/txt_select_option"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="Please select option"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/s22sp" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/car_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/select_layout"
+                android:layout_marginLeft="@dimen/s10dp"
+                android:layout_marginTop="@dimen/s10dp"
+                android:layout_marginRight="@dimen/s10dp"
+                android:layout_marginBottom="@dimen/s5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <View
+                    android:layout_width="@dimen/s20dp"
+                    android:layout_height="@dimen/s20dp"
+                    android:background="@drawable/circle" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/s10dp"
+                    android:text="@string/option_car_location"
+                    android:textColor="@color/theme"
+                    android:textSize="@dimen/s20dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pick_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/car_location"
+                android:layout_margin="@dimen/s10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <View
+                    android:layout_width="@dimen/s20dp"
+                    android:layout_height="@dimen/s20dp"
+                    android:background="@drawable/circle" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/s10dp"
+                    android:text="@string/option_custome_location"
+                    android:textColor="@color/theme"
+                    android:textSize="@dimen/s20dp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/cancel_image_btn"
+            android:layout_width="@dimen/s30dp"
+            android:layout_height="@dimen/s30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/cancel" />
+    </FrameLayout>
+
+
+</LinearLayout>
